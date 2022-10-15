@@ -13,9 +13,10 @@ function addCardToDB(props) {
     userMessage: props.userMessage,
     imageUrls: [],
   });
+
   document.getElementById(
     "shareUrl"
-  ).innerText = `${document.location}cardView.html?id=${id}`;
+  ).innerText = `Share the link to your ArtCard!\n10.254.3.83:5500/card.html?id=${id}`;
 }
 
 function parseForm() {
