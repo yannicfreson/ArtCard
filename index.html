@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="bg-[#16161e]" lang="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -8,19 +8,61 @@
   </head>
 
   <body class="text-white">
-    <div class="container mx-auto">
+    <div class="container px-2 sm:px-0 sm:mx-auto">
       <!-- TITLE -->
       <div
         id="title"
-        class="text-center children:text-4 text-4xl font-black mt-4 mb-4"
+        class="text-center children:text-4 text-6xl font-black mt-2 mb-4"
       >
-        <span class="-mr-1">
-          <p class="inline">ART</p>
+        <span class="-mr-2">
+          <p class="inline -mr-4 text-red-400">A</p>
+          <p class="inline -mr-4 text-yellow-400">R</p>
+          <p class="inline">T</p>
         </span>
-        <span class="-ml-1 text-slate-400">
+        <span class="-ml-2 text-slate-400">
           <p class="inline">CARD</p>
         </span>
       </div>
+
+      <!-- MAIN -->
+      <div class="bg-box rounded-lg p-2 text-white font-black text-lg">
+          <div class="mb-2">
+            <label  class="block mb-2" htmlFor=""> Your name</label>
+            <input
+              class="bg-textbox rounded-lg block p-1 w-full"
+              id="userName"
+            />
+          </div>
+          <div class="mb-2">
+            <label class="block mb-2" htmlFor=""> Your address</label>
+            <input
+              class="bg-textbox rounded-lg block p-1 w-full"
+              id="userAddress"
+            />
+          </div>
+          <div class="mb-2">
+            <label class="block mb-2" htmlFor=""> Museum </label>
+            <input
+              class="bg-textbox rounded-lg block p-1 w-full"
+              id="museumName"
+            />
+          </div>
+          <div class="mb-2">
+            <label class="block mb-2" htmlFor=""> Message</label>
+            <textarea
+              class="bg-textbox h-32 rounded-lg block p-1 w-full"
+              id="userMessage"
+            ></textarea>
+          </div>
+          
+        <div class="w-full">
+          <button
+            onClick="parseForm()"
+            class="bg-subtext w-full py-2 px-8 rounded-lg font-black"
+          >
+            GENERATE CARD
+          </button>
+        </div>
 
       <!-- FOOTER -->
       <footer
