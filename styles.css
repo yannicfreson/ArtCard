@@ -15,3 +15,58 @@ body {
 * {
   box-sizing: border-box;
 }
+
+.museumImageContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  background: #64748b;
+  padding: 0.5rem;
+}
+
+.museumImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#userNameCard {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#userAddressCard {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#museumNameCardHeader {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#museumNameCard {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+#userMessageCardHeader {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#userMessageCard {
+  font-size: 1.25rem;
+  text-align: justify;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+#artCardContainer {
+  margin-top: 3.5rem;
+}

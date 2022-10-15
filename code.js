@@ -10,8 +10,12 @@ function addCardToDB(props) {
     userName: props.userName,
     userAddress: props.userAddress,
     museumName: props.museumName,
+    userMessage: props.userMessage,
     imageUrls: [],
   });
+  document.getElementById(
+    "shareUrl"
+  ).innerText = `${document.location}cardView.html?id=${id}`;
 }
 
 function parseForm() {
