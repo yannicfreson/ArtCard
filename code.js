@@ -6,10 +6,15 @@ database.ref().on("value", function (snapshot) {
 });
 
 //set new card in db
-/* const id = crypto.randomUUID();
-database.ref(`cards/${id}`).push({
-  id: id,
-  name: "test",
-  description: "test",
-  image: "test",
-}); */
+function addCardToDB(props) {
+  const id = crypto.randomUUID();
+  database.ref(`cards/${id}`).push({
+    id: id,
+    date: new Date().toISOString(),
+    userName: props.userName,
+    userAddress: props.userAddress,
+    museumAddress: props.museumAddress,
+    museumName: props.museumName,
+    imageUrls: props.imageUrls,
+  });
+}
