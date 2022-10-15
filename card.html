@@ -26,48 +26,10 @@
 
       <!-- MAIN -->
       <div class="bg-box rounded-lg p-2 text-white font-black text-lg">
-          <div class="mb-2">
-            <label  class="block mb-2" htmlFor=""> Your name</label>
-            <input
-              class="bg-textbox rounded-lg block p-1 w-full"
-              id="userName"
-            />
-          </div>
-          <div class="mb-2">
-            <label class="block mb-2" htmlFor=""> Your address</label>
-            <input
-              class="bg-textbox rounded-lg block p-1 w-full"
-              id="userAddress"
-            />
-          </div>
-          <div class="mb-2">
-            <label class="block mb-2" htmlFor=""> Museum </label>
-            <select
-              class="bg-textbox rounded-lg block p-1 w-full"
-              id="museumName"
-            >
-            <option value="STAM">STAM</option>
-            <option value="HVA">Huis van Alijn</option>
-            <option value="industriemuseum">Industriemuseum</option>
-            <option value="DMG">Designmuseum Gent</option>
-          </select>
-          </div>
-          <div class="mb-2">
-            <label class="block mb-2" htmlFor=""> Message</label>
-            <textarea
-              class="bg-textbox h-32 rounded-lg block p-1 w-full"
-              id="userMessage"
-            ></textarea>
-          </div>
-          
-        <div class="w-full">
-          <button
-            onClick="parseForm()"
-            class="bg-subtext w-full py-2 px-8 rounded-lg font-black"
-          >
-            GENERATE CARD
-          </button>
+        <div class="mb-2">
+          <p id="userName">allez seg info enal</p>
         </div>
+      </div>
 
       <!-- FOOTER -->
       <footer
@@ -102,5 +64,6 @@
     <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-database.js"></script>
     <script src="firebaseInit.js"></script>
     <script src="code.js"></script>
+    <script src="cardView.js"></script>
   </body>
 </html>

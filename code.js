@@ -1,10 +1,5 @@
 let database = firebase.database();
 
-//console.log snapshot of the database
-database.ref().on("value", function (snapshot) {
-  console.log(snapshot.val());
-});
-
 //set new card in db
 function addCardToDB(props) {
   const id = crypto.randomUUID();
